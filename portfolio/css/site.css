@@ -1,13 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Crimson+Text:400,400i,600');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700');
-
 body {
     font-family: 'Crimson Text', 'Times New Roman', serif;
     background-color: #F2FFFC;
     font-size: 120%;
+    line-height: 1.5;
 }
 
-h1, h2 {
+h1,
+h2 {
     font-family: 'Open Sans Condensed', 'Arial', sans-serif;
 }
 
@@ -15,26 +16,34 @@ main h1 {
     text-align: center;
     background-color: #851944;
     color: #FFF;
-    padding: 10px;
+    padding: 25px;
+    border-bottom: #000 10px solid;
+}
+
+div {
+    width: 720px;
+    margin: auto;
+    /*margin: auto para distribuir o elemento centralizado*/
 }
 
 p {
-    text-align: justify; /*Estica as linhas para que cada linha tenha largura igual (como em jornais e revistas)*/
+    text-align: justify;
+    /*Estica as linhas para que cada linha tenha largura igual (como em jornais e revistas)*/
 }
 
 blockquote {
     background-color: #d2dddb;
     margin: 0px;
-    border: 5px #a59f9e solid;
+    border: 10px #C2CCCA solid;
     width: 250px;
-    box-sizing: border-box; /*para o navegador medir os elementos a partir da borda*/
-    padding: 15px;
+    box-sizing: border-box;
+    /*para o navegador medir os elementos a partir da borda*/
 }
-
 
 aside {
     background-color: #3C1D3D;
     color: white;
+    text-align: center;
 }
 
 main a {
@@ -56,10 +65,18 @@ article footer {
     color: inherit;
 }
 
+blockquote,
+aside,
+footer {
+    padding: 16px;
+}
+
 footer {
     background-color: #000;
     color: #F2FFFC;
 }
 
-
-
+ul {
+    list-style-type: none;
+    /*pararemover as bolinhas da lista*/
+}
